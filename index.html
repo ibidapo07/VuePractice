@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Review Page</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+<script type="vue-template" id="card">
+  <div class="card">
+    <div id="Ctop">
+      <div  id="Ccircle">
+       
+      </div>
+      <div id="Ctext">
+        <p style="font-size: 18px; font-weight: 600">{{review.customerName}}</p>
+      </div>
+    </div>
+    <div id="Cbottom">
+      <p style="text-align: start; color: white">
+        {{review.customerReview}}
+      </p>
+    </div>
+  </div>
+</script>
+<div id="japa" >
+  <div>
+    <p style="font: 600 45px monospace; margin: 0px 0px;">{{first}}</p>
+    <p style="margin: 5px 0px; font: 600 70px monospace; background: linear-gradient(to right, #48dac4 30%, #210aa5 65%, #370965 80%);  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;">{{second}}</p>
+  </div>
+  <div  style="display: grid; grid-template-columns: 1fr 1fr 1fr; ">
+    <div v-for="customer of reviews">
+      <Card :review= "customer"/>
+    </div>
+  </div>
+</div>
+
+<script src="code.js">
+  
+</script>
+</body>
+</html>

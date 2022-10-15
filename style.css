@@ -1,0 +1,46 @@
+body{
+    background-color: #211C30;
+}
+
+p{
+    font-family: monospace;
+    color: white;
+}
+#japa{
+    text-align: center;
+    height: 100vh;
+    padding: 100px 50px;
+    
+}
+
+.card{
+    background:  #342955;
+    border: 2px; 
+    border-radius:15px;
+    width: 400px; 
+    min-height: 180px;
+    margin: 20px 20px;
+    box-shadow: 0px 3px 1px rgb(2, 2, 2);
+    padding: 20px 30px;
+}
+
+#Ctop{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+}
+#Ctext{
+    margin-left: 9px;
+    padding-top: 3px;
+}
+#Ccircle{
+    height: 60px;
+    width: 60px;
+    background: #60C3F0;
+    border-radius: 30px;
+}
+#Cbottom{
+   padding: 10px 10px;
+}
