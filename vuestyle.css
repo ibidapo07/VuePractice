@@ -24,9 +24,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: fit-content;
+        width: auto;
         text-align: center;
-        padding: 100px 50px;
+        padding: 10px 0px;
     }
     #commentContainer{
         display: grid; 
@@ -62,13 +62,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: fit-content;
+        width: auto;
         text-align: center;
         padding: 100px 50px;
     }
     #commentContainer{
         display: grid; 
-        grid-column: 2; 
+        grid-template-columns: repeat(2,1fr); 
     }
   }
   body{
@@ -106,7 +106,7 @@
         justify-items: center;
         max-width: 100vw;
         text-align: center;
-        padding: 100px 50px;
+        padding: 100px ;
     }
 }
 
@@ -121,7 +121,7 @@ p{
 
 #Ctop{
     height: 50px;
-    width: 100vw;
+    width: auto;
     margin-bottom: 5px;
     display: flex;
     flex-direction: row;

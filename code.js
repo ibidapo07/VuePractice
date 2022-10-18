@@ -1,7 +1,23 @@
 
 const { createApp } = Vue
    const Card = {
-    template: "#card",
+    template: `
+    <div class="card">
+      <div id="Ctop">
+        <div  id="Ccircle">
+        
+        </div>
+        <div id="Ctext">
+          <p style="font-size: 18px; font-weight: 600">{{review.customerName}}</p>
+        </div>
+      </div>
+      <div id="Cbottom">
+        <p style="text-align: justify; text-justify: auto;color: white; font-stretch: 10%;">
+          {{review.customerReview}}
+        </p>
+      </div>
+    </div>
+    `,
     props:{
         review : Object
     }
@@ -33,6 +49,6 @@ const { createApp } = Vue
     },
 
     components: {
-        Card,
+        "Card" : Card,
     }
   }).mount('#japa')
