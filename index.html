@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Review Page</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="vuestyle.css" rel="stylesheet">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div id="Cbottom">
-      <p style="text-align: start; color: white">
+      <p style="text-align: justify; text-justify: auto;color: white; font-stretch: 10%;">
         {{review.customerReview}}
       </p>
     </div>
@@ -28,12 +28,11 @@
 </script>
 <div id="japa" >
   <div>
-    <p style="font: 600 45px monospace; margin: 0px 0px;">{{first}}</p>
-    <p style="margin: 5px 0px; font: 600 70px monospace; background: linear-gradient(to right, #48dac4 30%, #210aa5 65%, #370965 80%);  -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;">{{second}}</p>
+    <p id="heading1">{{first}}</p>
+    <p id="heading2" >{{second}}</p>
   </div>
-  <div  style="display: grid; grid-template-columns: 1fr 1fr 1fr; ">
-    <div v-for="customer of reviews">
+  <div id="commentContainer" >
+    <div v-for="customer of reviews" >
       <Card :review= "customer"/>
     </div>
   </div>
